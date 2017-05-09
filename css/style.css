@@ -170,6 +170,10 @@ PAGE - MENU: TAGLINE
     background-image: url(../img/kitchen_supplies.jpg);
 }
 
+#menu_tagline h1 span {
+    font-size: .9em;
+}
+
 
 /******************************
 
