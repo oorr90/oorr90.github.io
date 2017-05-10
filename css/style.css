@@ -433,3 +433,239 @@ footer {
 
 
 
+/******************************
+
+MEDIA QUERY #1
+
+*******************************/
+
+
+@media screen and (min-width: 550px) {
+    
+    /*********** NAVIGATION *********/
+    nav {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+    }
+    
+    nav div {
+        padding: 6px;
+    }
+    
+    /********** MAIN: TAGLINE ********/
+    #main_tagline {
+        font-size: 1.4em;
+    }
+    
+    /********** ABOUT: TAGLINE ********/
+    #about_tagline {
+        font-size: 1.4em;
+    }
+    
+    /********** MENU: TAGLINE ********/
+    #menu_tagline {
+        font-size: 1.4em;
+    }
+    
+    /********** MAIN: TEXT COLUMNS ********/
+    #intro_columns {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+    }
+    
+    .column {
+        padding: 0 14px;
+    }
+    
+    /********** MAIN: ABOUT US ********/
+    
+    #about_columns {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 90%;
+    }
+    
+    .about_column {
+        width: 46%;
+    }
+    
+     /********** MAIN: MENU AND SPECIALS ********/
+    
+    #menu {
+        font-size: 1em;
+    }
+    
+    tr:hover {
+        background-color: #cc9900;
+        color: #fff;
+    }
+    
+    #specials {
+        font-size: 1em;
+    }
+    
+    #specials ul li {
+        margin-top: 30px;
+    }
+    
+    
+     /********** MAIN: CONTACT ********/
+    
+    #contact_columns {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 90%;
+    }
+    
+    .contact_column {
+        width: 48%;
+    }
+    
+    
+    /********** MAIN: HIGHLIGHTS ********/
+    .highlight_item {
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+}
+
+
+/******************************
+
+MEDIA QUERY #2
+
+*******************************/
+
+
+@media screen and (min-width: 900px) {
+    /********** HEADER WRAPPER ********/
+    #header_wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    
+    #logo_header {
+        width: 100%;
+    }
+    
+    /********** HEADER NAV ********/
+    nav {
+        display: flex;
+        align-content: space-around;
+        width: 70%;
+        margin: 0 10px;
+        align-self: flex-end;
+        padding-bottom: 100px;
+        padding-right: 40px;
+    }
+    
+    /********** MAIN: TAGLINE ********/
+    
+    #main_tagline {
+        height: 600px;
+        font-size: 1.8em;
+    }
+    
+    #main_tagline h1 {
+        margin-top: 160px;
+    }
+    
+     /********** ABOUT: TAGLINE ********/
+    
+    #about_tagline, #menu_tagline, #contact_tagline {
+        height: 600px;
+        font-size: 1.8em;
+    }
+    
+    #about_tagline h1, #menu_tagline h1, #contact_tagline h1 {
+        margin-top: 160px;
+    }
+    
+
+    
+    /********** MAIN: INTRO ********/
+    
+    #intro {
+        font-size: 1.4em;
+        padding: 80px 0;
+    }
+    
+    #intro p {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #intro div {
+        padding-top: 4px;
+    }
+    
+    /********** MAIN: TEXT COLUMNS ********/
+    
+    #intro_columns {
+        font-size: 1.3em;
+    }
+    
+    .column {
+        padding: 0 30px;
+    }
+    
+    /********** MAIN: ABOUT US ********/
+    
+    .about_column {
+        width: 30%;
+    }
+    
+    
+    /********** MAIN: HIGHLIGHTS ********/
+    #highlights {
+        display: flex;
+        justify-content: space-between;
+        align-content: stretch;
+        margin-top: 100px;
+        margin-bottom: 120px;
+        width: 90%;
+        font-size: 1.3em;
+    }
+    
+    .highlight_item h3, .highlight_item p, .highlight_item img {
+        margin: auto;
+    }
+    
+    .highlight_item h3 {
+        margin-bottom: 10px;
+    }
+    
+    .highlight_item img {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        width: 90%;
+        max-width: 260px;
+    }
+    
+    .highlight_item {
+        width: 30%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .highlight_button {
+        align-self: flex-end;
+        width: 150px;
+    }
+}
+
+
+
+
+
