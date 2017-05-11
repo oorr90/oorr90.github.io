@@ -432,6 +432,7 @@ STICKY FOOTER
     padding-right: 5px;
     font-size: .8em;
     z-index: 1;
+    display: none;
 }
 
 #top {
