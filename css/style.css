@@ -21,6 +21,10 @@ a, a:hover, a:visited, a:active {
     color: #333;
 }
 
+#wrapper {
+    position: relative;
+}
+
 
 
 
@@ -323,6 +327,8 @@ th, td {
 }
 
 
+
+
 /******************************
 
 MAIN: HIGHLIGHTS
@@ -411,6 +417,42 @@ PAGE - MENU: SPECIALS
 
 /******************************
 
+STICKY FOOTER
+
+*******************************/
+
+
+#sticky {
+    width: 100%;
+    height: 25px;
+    position: fixed;    /*Here's what sticks it*/
+    bottom: 0;          /*to the bottom of the window*/
+    left:0;            /*and to the left of the window.*/
+    background-color: #cc9900;
+    text-transform: uppercase;
+    padding-top: 4px;
+    padding-right: 5px;
+    font-size: .8em;
+    z-index: 1;
+}
+
+#top {
+    text-align: right;
+}
+
+#top a {
+    color: #fff;
+}
+
+#top a:hover {
+    color: #595959;
+}
+
+
+
+
+/******************************
+
 FOOTER
 
 *******************************/
@@ -418,17 +460,32 @@ FOOTER
 footer {
     background-color: #cc9900;
     color: #fff;
-    margin-top: 100px;
-    height: 120px;
-    padding: 20px 10px 0 10px;
+    height: 100px;
     font-size: .8em;
+    padding: 10px;
+    margin-top: 100px;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#address_block {
+    margin-bottom: 14px;
 }
 
 #copy {
-    margin-top: 20px;
+    font-size: .9em;
 }
 
+#to_top {
+    text-transform: uppercase;
+}
 
+#to_top a {
+    color: #fff;
+}
 
 
 
@@ -663,6 +720,8 @@ MEDIA QUERY #2
         align-self: flex-end;
         width: 150px;
     }
+    
+
 }
 
 
