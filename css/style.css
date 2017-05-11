@@ -14,6 +14,7 @@ OVERALL STYLES
 body {
     font-family: 'Open Sans', sans-serif;
     color: #333;
+    position: relative;
 }
 
 a, a:hover, a:visited, a:active {
@@ -21,9 +22,6 @@ a, a:hover, a:visited, a:active {
     color: #333;
 }
 
-#wrapper {
-    position: relative;
-}
 
 
 
