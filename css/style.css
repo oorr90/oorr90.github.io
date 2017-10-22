@@ -15,11 +15,17 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #333;
     position: relative;
+    font-size: 100%;
 }
 
 a, a:hover, a:visited, a:active {
     text-decoration: none;
     color: #333;
+}
+
+img {
+    max-width: 100%;
+    display: block;
 }
 
 
@@ -28,21 +34,21 @@ a, a:hover, a:visited, a:active {
 
 /******************************
 
-SOCIAL LINKS
+HEADER: SOCIAL LINKS
 
 *******************************/
 
 
 .social_links {
-    text-align: right;
-    padding: 6px 8px;
+    padding: .25em;
     background-color: #262626;
-    
+    display: flex;
+    justify-content: flex-end;
 }
 
 .social_links img {
     width: 28px;
-    margin: 0 8px;
+    margin: .25em .8em;
 }
 
 .social_links img:hover {
@@ -68,14 +74,15 @@ header {
 }
 
 #logo_header {
-    margin-bottom: 20px;
+    margin: 1.5em auto;
+    width: 90%;
 }
 
 #logo_header img {
-    width: 90%;
-    max-width: 450px;
+    width: 75%;
+    min-width: 120px;
+    margin: 0 auto;
 }
-
 
 
 
@@ -109,19 +116,39 @@ nav .selected {
 
 
 
-
 /******************************
 
-MAIN: TAGLINE
+ALL PAGES: TAGLINE WITH IMAGE
 
 *******************************/
 
-#main_tagline {
+/***** PAGE: HOME ******/
+#home_tagline {
     background-image: url(../img/table_with_food.jpg);
 
 }
 
-#main_tagline, #about_tagline, #menu_tagline, #contact_tagline {
+/***** PAGE: ABOUT ******/
+#about_tagline {
+    background-image: url(../img/interior.jpg);
+}
+
+/***** PAGE: MENU ******/
+#menu_tagline {
+    background-image: url(../img/kitchen_supplies.jpg);
+}
+
+#menu_tagline h1 span {
+    font-size: .9em;
+}
+
+/***** PAGE: CONTACT ******/
+#contact_tagline {
+    background-image: url(../img/breakfast_outside.jpg);
+}
+
+/***** STYLING ALL TAGLINES ******/
+.tagline {
     background-size: cover;
     background-repeat: no-repeat;
     height: 400px;
@@ -131,7 +158,7 @@ MAIN: TAGLINE
     margin-top: 40px;
 }
 
-#main_tagline h1, #about_tagline h1, #menu_tagline h1, #contact_tagline h1 { 
+.tagline h1 { 
     color: #f2f2f2;
     text-transform: uppercase;
     display: inline-block;
@@ -141,7 +168,7 @@ MAIN: TAGLINE
     margin-top: 100px;
 }
 
-#main_tagline h1 span, #about_tagline h1 span, #menu_tagline h1 span, #contact_tagline h1 span {
+.tagline h1 span {
     font-size: 1.3em;
     font-family: 'Kranky', cursive;
 }
@@ -150,50 +177,9 @@ MAIN: TAGLINE
 
 /******************************
 
-PAGE - ABOUT: TAGLINE
+ALL PAGES: INTRODUCTION UNDER TAGLINE
 
 *******************************/
-
-
-#about_tagline {
-    background-image: url(../img/interior.jpg);
-}
-
-
-
-
-/******************************
-
-PAGE - MENU: TAGLINE
-
-*******************************/
-
-#menu_tagline {
-    background-image: url(../img/kitchen_supplies.jpg);
-}
-
-#menu_tagline h1 span {
-    font-size: .9em;
-}
-
-
-/******************************
-
-PAGE - CONTACT: TAGLINE
-
-*******************************/
-
-#contact_tagline {
-    background-image: url(../img/breakfast_outside.jpg);
-}
-
-
-/******************************
-
-MAIN: INTRODUCTION
-
-*******************************/
-
 
 #intro {
     background-color: #262626;
@@ -220,10 +206,12 @@ MAIN: INTRODUCTION
     border: 3px solid #fff;
     padding-top: 7px;
     margin: 0 auto;
+    text-align: center;
 }
 
 #intro img {
     width: 22px;
+    display: inline-block;
 }
 
 
@@ -231,11 +219,11 @@ MAIN: INTRODUCTION
 
 /******************************
 
-MAIN: TEXT COLUMNS
+ALL PAGES: TEXT COLUMNS
 
 *******************************/
 
-#intro_columns, #about_columns, #contact_columns {
+#text-columns, #about_columns, #contact_columns {
     width: 80%;
     margin: 50px auto;
     line-height: 1.5em;
@@ -329,7 +317,7 @@ th, td {
 
 /******************************
 
-MAIN: HIGHLIGHTS
+HOME: HIGHLIGHTS
 
 *******************************/
 
@@ -337,10 +325,13 @@ MAIN: HIGHLIGHTS
     width: 80%;
     margin: 80px auto 0;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .highlight_item {
-    margin-top: 50px;
+    margin-top: 3em;
+    width: 100%;
 }
 
 .highlight_item h3, .highlight_item p, .highlight_item img {
@@ -358,24 +349,26 @@ MAIN: HIGHLIGHTS
 }
 
 .highlight_item img {
-    width: 60%;
+    width: 60%;*/
     max-width: 300px;
     border-radius: 50%;
+    display: inline-block;
 }
 
 .highlight_button {
     background-color: #262626;
     color: #fff;
-    width: 120px;
+    width: 140px;
     margin: 0 auto;
     padding: 6px;
     border-radius: 4px;
-    font-size: .8em;
+    font-size: .9em;
     text-transform: uppercase;
 }
 
 .highlight_button:hover {
-    background-color: #404040;
+    background-color: #cc9900;
+    color: #262626;
 }
 
 /******************************
@@ -471,11 +464,13 @@ footer {
 }
 
 #address_block {
-    margin-bottom: 14px;
+    margin-bottom: 1em;
+    line-height: 1.3;
 }
 
 #copy {
     font-size: .9em;
+    margin-bottom: .5em;
 }
 
 #to_top {
@@ -491,44 +486,38 @@ footer {
 
 /******************************
 
-MEDIA QUERY #1
+MEDIA QUERY #1: 575px WIDTH
 
 *******************************/
 
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 575px) {
+    
+        
+    #logo_header img {
+        max-width: 275px;
+    }
     
     /*********** NAVIGATION *********/
     nav {
         display: flex;
         justify-content: space-between;
-        width: 90%;
+        width: 80%;
     }
     
     nav div {
         padding: 6px;
     }
     
-    /********** MAIN: TAGLINE ********/
-    #main_tagline {
-        font-size: 1.4em;
-    }
-    
-    /********** ABOUT: TAGLINE ********/
-    #about_tagline {
-        font-size: 1.4em;
-    }
-    
-    /********** MENU: TAGLINE ********/
-    #menu_tagline {
+    .tagline {
         font-size: 1.4em;
     }
     
     /********** MAIN: TEXT COLUMNS ********/
-    #intro_columns {
+    #text-columns {
         display: flex;
         justify-content: space-between;
-        width: 90%;
+        width: 92%;
     }
     
     .column {
@@ -583,44 +572,61 @@ MEDIA QUERY #1
     
     
     /********** MAIN: HIGHLIGHTS ********/
+    #highlights {
+        width: 95%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
     .highlight_item {
-        width: 80%;
+        width: 47%;
+        min-width: 300px;
         margin-right: auto;
         margin-left: auto;
+        font-size: 1.2em;
     }
+    
+    .highlight_item img {
+        max-width: 250px;
+    }
+    
     
 }
 
 
 /******************************
 
-MEDIA QUERY #2
+MEDIA QUERY #2: 990px WIDTH
 
 *******************************/
 
 
 @media screen and (min-width: 900px) {
+    
     /********** HEADER WRAPPER ********/
     #header_wrapper {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 10px;
+        width: 90%;
+        max-width: 1500px;
     }
     
     #logo_header {
-        width: 100%;
+        margin: 0 auto;
+        width: 30%;
     }
+    
+
     
     /********** HEADER NAV ********/
     nav {
         display: flex;
-        align-content: space-around;
-        width: 70%;
-        margin: 0 10px;
-        align-self: flex-end;
-        padding-bottom: 100px;
-        padding-right: 40px;
+        align-content: space-between;
+        width: 50%;
+        margin: 0 auto;
     }
     
     /********** MAIN: TAGLINE ********/
@@ -688,8 +694,8 @@ MEDIA QUERY #2
         align-content: stretch;
         margin-top: 100px;
         margin-bottom: 120px;
+        font-size: .9em;
         width: 90%;
-        font-size: 1.3em;
     }
     
     .highlight_item h3, .highlight_item p, .highlight_item img {
